@@ -1,0 +1,27 @@
+// BIBLIOTECAS //
+#include <stdio.h>
+#include <stdlib.h>
+int main()
+{
+//DECLARACAO DE VARIAVEIS//
+	float R1;
+	float R2;
+	float RS;
+	float RP;
+//ENTRADA DE DADOS//
+printf ("Ola! Este e um programa para calcular a associacao de resistores em serie e em paralelo escrito em linguagem C.\nPor favor, siga os passos a seguir inserindo os valores dos dois resistores.");
+printf ("\nInsira o valor do resistor 1:");
+scanf ("%f", &R1);
+printf ("\nInsira o valor do resistor 2:");
+scanf ("%f", &R2);
+//PROCESSAMENTO//
+RS=(R1+R2);
+RP=(R1*R2)/(R1+R2);
+//SAIDA DE DADOS//
+printf ("\nA resistencia da associacao dos resistores ligados em serie e:" "%f", RS);
+printf ("\nA resistencia da associacao dos resistores ligados em paralelo e:" "%f", RP);
+
+printf ("\n\nObrigado por utilizar meu programa!\nDesenvolvido por\n\tAluno 91118 Fernando Luigi Cunha Dipp\n\tProfessor Joao Miguel Lac Roehe\n\tCadeira SE053 Programacao Basica\n\tFaculdade de Tecnologia SENAI");
+
+return 0;
+}
